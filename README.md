@@ -1,6 +1,6 @@
-# vue-to-top-button
+# vue-to-top-button plugin
 
-A simple customizable go-to-top button. Directive & mixin for Vue or Nuxt projects.
+A simple custom plugin for Vue and Nuxt projects that embeds a to-top button on a page with a lot of customization.
 
 ## Installation
 
@@ -93,14 +93,14 @@ module.exports = {
 ## OPTIONS
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| auto | *boolean* | Choose to use directive or mixin. The default is true. The button connects automatically to all pages. If set to false, then you need to use the *totopbutton* directive on any page. |
-| type | *number* | Default 0. |
-| color | *string* | Default "#777". |
-| width | *number* | Default 50. |
-| offset | *number* | Default 2. |
-| bg | *string* | Default "transparent". |
-| radius | *number* | Default 50. |
-| bottom | *number* | Default 70. |
-| right | *number* | Default 70. |
-| transition | *number* | Default 300. |
-| classname | *string* | Default null. |
+| auto | *boolean* | Choose to use directive or mixin mode. If set to true, the button connects automatically to all pages. If set to false, then you need to use the *totopbutton* directive on any page. Default true |
+| type | *number* | Button appearance. 0 - Static button (no animation). 1 - Animated button. Default 0 |
+| color | *string* | Цвет кнопки. Default "#777". |
+| width | *number* | The size of the button in pixels. Default 50 |
+| offset | *number* | Number of scrolled screens before the button appears. Default 1.5 |
+| bg | *string* | The fill color of the button. Default "transparent" |
+| radius | *number* | Button border radius as a percentage. Default 50. |
+| bottom | *number* | Bottom padding in pixels. Default 70. |
+| right | *number* | Right indent in pixels. Default 70. |
+| transition | *number* | Smoothness of appearance in milliseconds. Default 300. |
+| classname | *string* | Additional class. Default null. |
