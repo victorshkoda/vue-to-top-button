@@ -8,26 +8,28 @@ A simple customizable go-to-top button. Directive & mixin for Vue or Nuxt projec
 npm install vue-to-top-button --save
 ```
 ## Usage Vue
-###Import statement:
+### Import statement:
 If use mixin (auto connection)
-```
+```javascript
 // Your main.js code
-import vueToTopButton from "vue-to-top-button";
+import vueToTopButton from "vue-to-top-button"
 Vue.use(vueToTopButton)
 
 //or with options
-Vue.use(vueToTopButton, {//options})
-
+Vue.use(vueToTopButton, {
+    //options
+})
 ```
 If use directive:
-```
+```javascript
 // Your main.js code
-import vueToTopButton from "vue-to-top-button";
+import vueToTopButton from "vue-to-top-button"
 Vue.use(vueToTopButton, {
     auto: false,
     //other options
 })
-
+```
+```vue
 // Your App.vue code
 <template>
   <div id="app">
@@ -35,29 +37,31 @@ Vue.use(vueToTopButton, {
    <div v-totopbutton></div>
   </div>
 </template>
-
 ```
 ## Usage Nuxt
-###Import statement:
+### Import statement:
 If use mixin (auto connection)
-```
+```javascript
 // Create vueToTopButton.js in plugins directory
 // Your vueToTopButton.js code
 import vueToTopButton from "vue-to-top-button";
 Vue.use(vueToTopButton)
 
 //or with options
-Vue.use(vueToTopButton, {//options})
+Vue.use(vueToTopButton, {
+    //options
+})
 
 // Your nuxt.config.js
-...
-plugins: [
-    {src: '~/plugins/vueToTopButton.js',  ssr: false}
-],
-...
+module.exports = {
+    plugins: [
+        {src: '~/plugins/vueToTopButton.js',  ssr: false}
+    ],
+    ...
+}
 ```
 If use directive:
-```
+```javascript
 // Create vueToTopButton.js in plugins directory
 // Your vueToTopButton.js code
 import vueToTopButton from "vue-to-top-button";
@@ -69,12 +73,14 @@ Vue.use(vueToTopButton, {
 })
 
 // Your nuxt.config.js
-...
-plugins: [
-    {src: '~/plugins/vueToTopButton.js',  ssr: false}
-],
-...
-
+module.exports = {
+    plugins: [
+        {src: '~/plugins/vueToTopButton.js',  ssr: false}
+    ],
+    ...
+}
+```
+```vue
 // Your any-page.vue or any-layout.vue code
 <template>
   <div>
@@ -82,7 +88,6 @@ plugins: [
    <div v-totopbutton></div>
   </div>
 </template>
-
 ```
 
 ## OPTIONS
