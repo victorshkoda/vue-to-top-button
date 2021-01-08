@@ -1,0 +1,22 @@
+{
+  "name": "vue-to-top-button",
+  "version": "1.0.0",
+  "description": "vue-to-top-button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorshkoda/vue-to-top-button.git"
+  },
+  "keywords": [
+    "vue-to-top-button"
+  ],
+  "author": "Victor Shkoda <victorshkoda@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victorshkoda/vue-to-top-button/issues"
+  },
+  "homepage": "https://github.com/victorshkoda/vue-to-top-button#readme"
+}
