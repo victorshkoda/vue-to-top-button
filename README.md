@@ -1,6 +1,6 @@
 # vue-to-top-button plugin
 
-A simple custom plugin for Vue and Nuxt projects that embeds a to-top button on a page with a lot of customization.
+A simple custom plugin for Vue and Nuxt projects, that embeds a "to-top" button on a page. The plugin is easily customizable for the appearance of the page. It is possible to automatically connect a button to all pages or connect to individual pages using a directive.
 
 ## Installation
 
