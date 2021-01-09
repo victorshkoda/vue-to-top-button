@@ -124,7 +124,7 @@ module.exports = {
 Vue.use(vueToTopButton, {
     type: 1,
     color: "#02989a",
-    bg: "d2f7f3",
+    bg: "#d2f7f3",
     offset: 2
 })
 ```
