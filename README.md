@@ -97,10 +97,10 @@ module.exports = {
 | type | *number* | Button appearance. 0 - Static button (no animation). 1 - Animated button. Default 0 |
 | color | *string* | Button color. Default "#777" |
 | width | *number* | The size of the button in pixels. Default 50 |
-| offset | *number* | Number of scrolled screens before the button appears. Default 1.5 |
+| offset | *number* | Number of scrolled screens before the button appears. Default 1.7 |
 | bg | *string* | The fill color of the button. Default "transparent" |
 | radius | *number* | Button border radius as a percentage. Default 50 |
 | bottom | *number* | Bottom padding in pixels. Default 70 |
 | right | *number* | Right indent in pixels. Default 70 |
 | transition | *number* | Smoothness of appearance in milliseconds. Default 300 |
-| classname | *string* | Additional class. Default null |
+| classname | *string* | Additional class. Default "" |

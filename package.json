@@ -1,17 +1,28 @@
 {
   "name": "vue-to-top-button",
   "version": "1.0.0",
-  "description": "vue-to-top-button",
-  "main": "index.js",
+  "description": "Plugin vue-to-top-button for Vue and Nuxt projects",
+  "main": "vueToTopButton.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "contributors": [
+    {
+      "name": "Victor Shkoda",
+      "email": "victorshkoda@gmail.com"
+    }
+  ],
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/victorshkoda/vue-to-top-button.git"
   },
   "keywords": [
-    "vue-to-top-button"
+    "to-top-button",
+    "vue",
+    "nuxt",
+    "top",
+    "button"
   ],
   "author": "Victor Shkoda <victorshkoda@gmail.com>",
   "license": "MIT",
