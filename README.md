@@ -121,8 +121,6 @@ module.exports = {
 ## EXAMPLE WITH OPTIONS
 ![alt text](https://github.com/victorshkoda/vue-to-top-button/raw/main/img/btn_color.gif "Animated button with any color options")
 ```javascript
-// Your main.js code
-import vueToTopButton from "vue-to-top-button"
 Vue.use(vueToTopButton, {
     type: 1,
     color: "#02989a",
