@@ -10,7 +10,8 @@ const defaultOptions = {
   right: 70,
   transition: 300,
   radius: 50,
-  type: 1
+  type: 0,
+  animation: 2.5
 }
 vueToTopButton.install = function (Vue, options) {
   let userOptions = {...defaultOptions, ...options}
@@ -18,7 +19,7 @@ vueToTopButton.install = function (Vue, options) {
   let winoffset = window.innerHeight * userOptions.offset
   let inner = "&#8686;"
   if(userOptions.type === 1){
-    inner = "<svg viewBox=\"0 0 44.99 60.67\" style=\"height: 97%;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><style>.line-arrow-up4{animation: line-arrow-up4-fly 3s infinite ease-in-out;} @keyframes line-arrow-up4-fly{ 0% { transform: translate3d(0, 60px, 0);}30% {transform: translate3d(0, -4px, 0);} 40% {transform: translate3d(0, 0, 0);} 50% {transform: translate3d(0, -4px, 0);}70% {transform: translate3d(0, 0, 0);}100% {transform: translate3d(0, -60px, 0);}}@media (prefers-reduced-motion: reduce) {.line-arrow-up4 {animation: none;}}</style><path class=\"line-arrow-up4 stroke1 fill1\" d=\"M30,59.67H15.85a1,1,0,0,1-1-1V30.72a1,1,0,0,0-1-1H1.5a.5.5,0,0,1-.39-.81L22.53,1.19a.5.5,0,0,1,.79,0L43.89,28.92a.5.5,0,0,1-.4.8H32a1,1,0,0,0-1,1v28A1,1,0,0,1,30,59.67Z\" fill=\"" + userOptions.color + "\" stroke=\"transparent\" stroke-width=\"0\" style=\"animation-duration: 2.5s;\"></path></svg>"
+    inner = "<svg viewBox=\"0 0 44.99 60.67\" style=\"height: 97%;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><style>.line-arrow-up4{animation: line-arrow-up4-fly 3s infinite ease-in-out;} @keyframes line-arrow-up4-fly{ 0% { transform: translate3d(0, 60px, 0);}30% {transform: translate3d(0, -4px, 0);} 40% {transform: translate3d(0, 0, 0);} 50% {transform: translate3d(0, -4px, 0);}70% {transform: translate3d(0, 0, 0);}100% {transform: translate3d(0, -60px, 0);}}@media (prefers-reduced-motion: reduce) {.line-arrow-up4 {animation: none;}}</style><path class=\"line-arrow-up4 stroke1 fill1\" d=\"M30,59.67H15.85a1,1,0,0,1-1-1V30.72a1,1,0,0,0-1-1H1.5a.5.5,0,0,1-.39-.81L22.53,1.19a.5.5,0,0,1,.79,0L43.89,28.92a.5.5,0,0,1-.4.8H32a1,1,0,0,0-1,1v28A1,1,0,0,1,30,59.67Z\" fill=\"" + userOptions.color + "\" stroke=\"transparent\" stroke-width=\"0\" style=\"animation-duration: " + userOptions.animation + "s;\"></path></svg>"
   }
   if(userOptions.radius > 50) userOptions.radius = 50
   if(userOptions.radius < 0) userOptions.radius = 0

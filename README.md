@@ -106,7 +106,9 @@ module.exports = {
 | bottom | *number* | Bottom padding in pixels. Default 70 |
 | right | *number* | Right indent in pixels. Default 70 |
 | transition | *number* | Smoothness of appearance in milliseconds. Default 300 |
+| animation | *number* | Animation speed in seconds (for buttons with animation). Default 2.5 |
 | classname | *string* | Additional class. Default "" |
+
 
 ## EXAMPLE WITH OPTIONS
 ![alt text](https://github.com/victorshkoda/vue-to-top-button/raw/main/img/btn_color.gif "Animated button with any color options")
