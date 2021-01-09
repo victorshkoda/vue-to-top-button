@@ -2,8 +2,8 @@
 
 A simple custom plugin for Vue and Nuxt projects, that embeds a "to-top" button on a page. The plugin is easily customizable for the appearance of the page. It is possible to automatically connect a button to all pages or connect to individual pages using a directive.
 
-![Type 0 button](img/type0.jpg "Type 0 button") 
-![Type 1 animated button](img/type1.gif "Type 1 animated button")
+![Type 0 button](https://github.com/victorshkoda/vue-to-top-button/raw/main/img/type0.jpg "Type 0 button") 
+![Type 1 animated button](https://github.com/victorshkoda/vue-to-top-button/raw/main/img/type1.gif "Type 1 animated button")
 
 ## Installation
 
@@ -108,8 +108,8 @@ module.exports = {
 | transition | *number* | Smoothness of appearance in milliseconds. Default 300 |
 | classname | *string* | Additional class. Default "" |
 
-## EXAMPLE OPTIONS
-![alt text](img/btn_color.gif "Animated button with any color options")
+## EXAMPLE WITH OPTIONS
+![alt text](https://github.com/victorshkoda/vue-to-top-button/raw/main/img/btn_color.gif "Animated button with any color options")
 ```javascript
 // Your main.js code
 import vueToTopButton from "vue-to-top-button"
