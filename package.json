@@ -1,6 +1,6 @@
 {
   "name": "vue-to-top-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin vue-to-top-button for Vue and Nuxt projects",
   "main": "vueToTopButton.js",
   "scripts": {
