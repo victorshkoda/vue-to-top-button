@@ -47,6 +47,7 @@ If use mixin (auto connection)
 ```javascript
 // Create vueToTopButton.js in plugins directory
 // Your vueToTopButton.js code
+import Vue from 'vue'
 import vueToTopButton from "vue-to-top-button";
 Vue.use(vueToTopButton)
 
