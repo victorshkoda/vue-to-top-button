@@ -49,7 +49,11 @@ If use mixin (auto connection)
 // Your vueToTopButton.js code
 import Vue from 'vue'
 import vueToTopButton from "vue-to-top-button";
-Vue.use(vueToTopButton)
+export default function (app) {
+  if (!Vue.prototype.vueToTopButton) {
+    Vue.use(vueToTopButton)
+  }
+}
 
 //or with options
 Vue.use(vueToTopButton, {
@@ -68,13 +72,16 @@ If use directive:
 ```javascript
 // Create vueToTopButton.js in plugins directory
 // Your vueToTopButton.js code
+import Vue from 'vue'
 import vueToTopButton from "vue-to-top-button";
-Vue.use(vueToTopButton)
-//or
-Vue.use(vueToTopButton, {
-    auto: false,
-    //other options
-})
+export default function (app) {
+  if (!Vue.prototype.vueToTopButton) {
+    Vue.use(vueToTopButton, {
+        auto: false,
+        //other options
+    })
+  }
+}
 
 // Your nuxt.config.js
 module.exports = {
