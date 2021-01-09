@@ -93,7 +93,7 @@ vueToTopButton.install = function (Vue, options) {
       }
     });
   }else{
-    Vue.directive('mydir', {
+    Vue.directive('totopbutton', {
       bind (el) {
         if(userOptions.classname) el.className = userOptions.classname
         el.setAttribute("id", "vs_to_top_btn");
